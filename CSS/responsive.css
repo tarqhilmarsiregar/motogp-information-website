@@ -1,0 +1,321 @@
+/* Ukuran SmartPhone */
+@media screen and (max-width: 320px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1 {
+        position: relative;
+        width: 80%;
+    }
+
+    header img {
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        background-color: #fff;
+        top: 1px;
+        right: 10px;
+        width: 35px;
+    }
+
+    header nav {
+        margin-top: 10px;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: #242f9b;
+    }
+
+    nav ul.main-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav ul.main-nav li {
+        padding: 25px;
+        width: 75vw;
+        text-align: center;
+    }
+
+    @keyframes AnimasiMasuk {
+        0% {
+            margin-right: -275px;
+        }
+
+        100% {
+            margin-right: 0;
+        }
+    }
+
+    nav ul.toggle {
+        width: 75vw;
+        height: 100vh;
+        display: flex;
+        background-color: #242f9b;
+        animation: AnimasiMasuk 1s;
+    }
+
+    #imageSlider img {
+        height: 240px;
+    }
+
+    .sliders {
+        top: 265px;
+    }
+
+    .sliders input[type="radio"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 9px;
+    }
+
+    main div.main-content {
+        width: 100%;
+    }
+
+    main #tentang img {
+        width: 225px;
+    }
+
+    #tentang section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #daftar-tim .tahun-motogp,
+    .tahun-moto2,
+    .tahun-moto3,
+    .tahun-motoe {
+        width: 100%;
+    }
+
+    main .pembalap-tim-motogp img,
+    .pembalap-tim-moto2 img,
+    .pembalap-tim-moto3 img,
+    .pembalap-tim-motoe img {
+        width: 275px;
+    }
+
+    main aside {
+        width: 100%;
+    }
+
+    aside figure img {
+        width: 150px;
+    }
+
+    aside .socialMedia img {
+        width: 25px;
+    }
+}
+
+/* Ukuran Device Sedang*/
+@media screen and (width: 768px) {
+    header {
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    header h1 {
+        width: 23%;
+    }
+
+    header img.hidden {
+        display: none;
+    }
+
+    header nav {
+        width: 75%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #list-dj ul.sub-nav,
+    #list-dt ul.sub-nav,
+    #list-tentang ul.sub-nav {
+        position: absolute;
+        width: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #242f9b;
+        list-style: none;
+    }
+
+    #list-dj ul.sub-nav {
+        left: 295px;
+    }
+
+    #list-dt ul.sub-nav {
+        left: 457px;
+    }
+
+    #list-tentang ul.sub-nav {
+        left: 615px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 9px;
+    }
+
+    main div.main-content {
+        width: 100%;
+    }
+
+    main #tentang section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main aside {
+        width: 100%;
+    }
+}
+
+/* Ukuran Device Besar*/
+@media screen and (min-width: 1024px) {
+
+    header img.hidden {
+        display: none;
+    }
+
+    header h1 {
+        width: 23%;
+    }
+
+    header nav {
+        width: 75%;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #list-dj ul,
+    #list-dt ul,
+    #list-tentang ul {
+        display: none;
+    }
+
+    #list-dj ul.sub-nav,
+    #list-dt ul.sub-nav,
+    #list-tentang ul.sub-nav {
+        width: 200px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #242f9b;
+        padding: 5px;
+        margin-top: 3px;
+    }
+
+    #list-dj ul.sub-nav {
+        left: 583px;
+    }
+
+    #list-dt ul.sub-nav {
+        left: 850px;
+    }
+
+    #list-tentang ul.sub-nav {
+        right: 40px;
+    }
+
+    header nav ul.sub-nav li {
+        padding: 7px;
+    }
+
+    .dj {
+        display: flex;
+    }
+
+    #imageSlider img {
+        height: 500px;
+    }
+
+    .sliders {
+        top: 517px;
+    }
+
+    .sliders input[type="radio"] {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    }
+
+    main div.main-content {
+        width: 70%;
+    }
+
+    main aside {
+        width: 25%;
+        padding: 5px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .7);
+        height: 450px;
+        border-radius: 5px;
+    }
+
+    aside figure img {
+        width: 200px;
+    }
+
+    aside .socialMedia img {
+        width: 35px;
+    }
+
+    main #daftar-tim .tahun-motogp,
+    .tahun-moto2,
+    .tahun-moto3,
+    .tahun-motoe {
+        width: 250px;
+    }
+
+    .active {
+        background-color: #dff6ff;
+        border-radius: 3px;
+        padding: 2px;
+        color: #000;
+    }
+
+    main #tentang img {
+        margin: 25px 0;
+        width: 300px;
+    }
+
+    main .pembalap-tim-motogp img,
+    .pembalap-tim-moto2 img,
+    .pembalap-tim-moto3 img,
+    .pembalap-tim-motoe img {
+        width: 380px;
+        padding: 9px;
+    }
+}

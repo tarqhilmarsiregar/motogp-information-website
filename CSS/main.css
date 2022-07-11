@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MotoGP;
+    src: url('../aset/fonts/MotoGP-Display-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../aset/fonts/Poppins-Regular.ttf');
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #242f9b;
+    padding: 7px;
+    z-index: 999;
+}
+
+header h1 {
+    font-family: MotoGP;
+    color: #fff;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: MotoGP;
+}
+
+header nav a:hover {
+    color: #dbdffd;
+}
+
+#list-dj ul,
+#list-dt ul,
+#list-tentang ul {
+    display: none;
+}
+
+#list-dj ul.sub-nav,
+#list-dt ul.sub-nav,
+#list-tentang ul.sub-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242f9b;
+    list-style: none;
+    right: 0;
+}
+
+header nav ul.sub-nav li {
+    padding: 7px;
+}
+
+.dj {
+    display: flex;
+}
+
+#imageSlider {
+    max-width: 100%;
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imageSlider img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sliders {
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    top: 517px;
+}
+
+.sliders input[type="radio"] {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+main {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+
+main aside {
+    width: 23%;
+    padding: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .7);
+    height: 450px;
+    border-radius: 5px;
+}
+
+aside figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+aside figure h3 {
+    font-family: Poppins-Regular;
+}
+
+aside figure img {
+    width: 200px;
+    border-radius: 3px;
+}
+
+aside .socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+aside .socialMedia img {
+    width: 35px;
+}
+
+aside .socialMedia .facebook,
+.instagram,
+.linkedin,
+.youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .socialMedia a {
+    text-decoration: none;
+    font-family: Poppins-Regular;
+    color: #000;
+}
+
+main h2,
+main h3 {
+    font-family: MotoGP;
+}
+
+main #sejarah-motogp,
+#tentang,
+#daftar-tim,
+#daftar-juara {
+    padding: 9px;
+}
+
+main #daftar-tim h2 {
+    margin-bottom: 5px;
+}
+
+main #daftar-tim .tahun-motogp,
+.tahun-moto2,
+.tahun-moto3,
+.tahun-motoe {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MotoGP;
+    margin-bottom: 10px;
+}
+
+main #daftar-tim section,
+#daftar-juara section {
+    padding: 10px;
+}
+
+#daftar-juara section ul {
+    list-style: none;
+    padding: 5px;
+    font-family: Poppins-Regular;
+}
+
+main #daftar-tim .tahun-motogp div,
+.tahun-moto2 div,
+.tahun-moto3 div,
+.tahun-motoe div {
+    display: flex;
+    font-family: Poppins-Regular;
+    margin-left: 7px;
+}
+
+main #daftar-tim .tahun-motogp,
+.tahun-moto2,
+.tahun-moto3,
+.tahun-motoe {
+    background-color: #47b5ff;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+main #daftar-tim .tahun-motogp,
+.tahun-moto2,
+.tahun-moto3,
+.tahun-motoe div:hover {
+    cursor: pointer;
+}
+
+.dua,
+.satu,
+.nol,
+.sembilan {
+    color: #dff6ff;
+}
+
+.dua:hover,
+.satu:hover,
+.nol:hover,
+.sembilan:hover {
+    background-color: #dff6ff;
+    border-radius: 3px;
+    padding: 2px;
+    color: #000;
+}
+
+.active {
+    background-color: #dff6ff;
+    border-radius: 3px;
+    padding: 2px;
+    color: #000;
+}
+
+main #sejarah-motogp section,
+#tentang section {
+    padding: 9px;
+}
+
+main #tentang img {
+    margin: 25px 0;
+    width: 300px;
+}
+
+main #sejarah-motogp p,
+#tentang p {
+    text-indent: 1%;
+    font-family: Poppins-Regular;
+}
+
+main .pembalap-tim-motogp img,
+.pembalap-tim-moto2 img,
+.pembalap-tim-moto3 img,
+.pembalap-tim-motoe img {
+    width: 380px;
+    padding: 9px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #646fd4;
+    color: #dbdffd;
+    padding: 9px;
+}
+
+footer p {
+    font-family: MotoGP;
+}
